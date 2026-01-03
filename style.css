@@ -49,7 +49,7 @@ nav ul li a::after{
     content:'';
     width: 0%;
     height:3px;
-    background:#E64848;
+    background:#38bdf8;
     position: absolute;
     left:0;
     bottom : -6px;
@@ -67,7 +67,7 @@ width:100%;
    margin-top: 20px;
 }
 .header-text h1 span{
-    color:#E64848;
+    color:#38bdf8;
 }
 
 #about{
@@ -114,7 +114,7 @@ width:100%;
     content: '';
     width:0;
     height:3px;
-    background:#E64848;
+    background:#38bdf8;
     position:absolute;
     left:0;
     bottom:-8px;
@@ -124,7 +124,7 @@ width:100%;
     width:50%;
 }
 .tab-contents ul li span{
-    color:#b54769;
+    color:#22d3ee;
     font-size: 16px;
 }
 .tab-contents{
@@ -205,7 +205,10 @@ transition: transform 0.5s;
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#E64848);
+    background: linear-gradient(
+        rgba(2,12,27,0.9),
+        rgba(56,189,248,0.85)
+    );
     border-radius: 10px;
     position :absolute;
     left:0;
@@ -226,7 +229,7 @@ transition: transform 0.5s;
 }
 .layer a{
   margin-top: 20px;
-  color:#E64848;
+  color:#38bdf8;
    text-decoration: none;
    font-size: 18px;
    line-height:60px;
@@ -245,7 +248,7 @@ transition: transform 0.5s;
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #E64848;
+    border: 1px solid #38bdf8;
     padding: 14px 50px;
     border-radius: 6px;
      text-decoration: none;
@@ -253,7 +256,8 @@ transition: transform 0.5s;
      transition:background 0.5s ;
 }
 .btn:hover{
-    background:#E64848;
+    background:#38bdf8;
+
 }
 .contact-left{
     flex-basis: 35%;
@@ -265,7 +269,7 @@ transition: transform 0.5s;
     margin-top: 30px;
 }
 .contact-left p i{
-    color:#E64848;
+    color:#38bdf8;
     margin-right: 15px;
       font-size:25px;
 }
@@ -280,12 +284,12 @@ margin-top:30px;
     transform: transition 0.5s;
 }
 .social-icons a:hover{
-    color: #E64848;
+    color: #38bdf8;
     transform:translateY(-5px);
 }
 .btn.btn2{
     display:inline-block;
-    background:#E64848;
+    background:#38bdf8;
 }
 .contact-right form{
     width:100%
@@ -294,7 +298,8 @@ form input, form textarea{
     width:100%;
     border:0;
     outline:none;
-    background: #262626;
+background:#0b1a2a;
+
     padding:15px;
      margin:15px 0;
      color:#fff;
@@ -311,7 +316,8 @@ form .btn2{
     width:100%;
      text-align: center;
     padding:25px 0;
-    background:#262626;
+    background:#0b1a2a;
+
     font-weight: 300;
     margin-top: 20px;
 
@@ -343,7 +349,7 @@ nav .fa-xmark{
     font-size: 25px;
 }
 nav ul{
-    background: #E64848;
+     background: #0b1a2a;
     position:fixed;
     top:0;
     right: -200px;
