@@ -251,11 +251,17 @@ width:100%;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 360px;
 }
 .work img{
-    width:100%;  
+  
     border-radius:10px;
     display:block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
+}
 transition: transform 0.5s;
 }
 .layer{
