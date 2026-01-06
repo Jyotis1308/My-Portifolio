@@ -41,16 +41,26 @@
                     <h1 class ="sub-title">About me</h1>
                     <p class="about-me-p">"I’m a passionate developer with a strong foundation in coding, problem-solving, and building efficient software solutions. I enjoy turning ideas into real-world applications and continuously learning new technologies to improve my craft."</p>
                     <div class ="tab-titles">
-                        <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                         <p class ="tab-links" onclick="opentab('experience')">Experience</p>
-                          <p class ="tab-links" onclick="opentab('education')">Education</p>
+                       <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                       <p class="tab-links" onclick="opentab(event,'education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span> Web Development </span><br>Web app Development</li>
-                             <li><span>UI/UX</span><br>Desging Layout</li>
-                              <li><span> App Development </span><br> App Development</li>
-                        </ul>
+    <li>
+        <span>Web Development</span><br>
+        Building responsive and scalable web applications
+    </li>
+    <li>
+        <span>UI/UX Design</span><br>
+        Designing clean, user-friendly, and accessible interfaces
+    </li>
+    <li>
+        <span>Frontend Development</span><br>
+        Developing interactive UIs using React and modern JavaScript
+    </li>
+</ul>
+
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
@@ -75,24 +85,39 @@
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+               <div>
                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit blanditiis eos! Nulla molestias itaque earum eos ex qui consectetur eius iusto, ducimus voluptate, odio voluptatum. Illo nobis odio facere.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                  <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit blanditiis eos! Nulla molestias itaque earum eos ex qui consectetur eius iusto, ducimus voluptate, odio voluptatum. Illo nobis odio facere.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                  <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit blanditiis eos! Nulla molestias itaque earum eos ex qui consectetur eius iusto, ducimus voluptate, odio voluptatum. Illo nobis odio facere.</p>
-                    <a href="#">Learn more</a>
-                </div>
+                    <h2>Web Development</h2>
+                    <p>
+                      I build responsive and user-friendly websites using modern technologies like
+                   HTML, CSS, JavaScript,React,NodeJs,ExpressJs,MongoDB. My focus is on clean code, performance,
+                    and real-world usability.
+                    </p>
+                 <a href="#">Learn more</a>
+              </div>
+
+                 <div>
+    <i class="fa-solid fa-crop-simple"></i>
+    <h2>UI/UX Design</h2>
+    <p>
+        I design clean and intuitive user interfaces with a strong focus on user
+        experience, accessibility, and visual consistency. I enjoy transforming
+        ideas into simple, engaging layouts.
+    </p>
+    <a href="#">Learn more</a>
+</div>
+
+                <div>
+    <i class="fa-solid fa-laptop-code"></i>
+    <h2>Frontend Development</h2>
+    <p>
+        I specialize in building interactive and dynamic frontends using modern
+        JavaScript frameworks. I focus on responsive layouts, smooth interactions,
+        and cross-browser compatibility.
+    </p>
+    <a href="#">Learn more</a>
+</div>
+
             </div>
         </div>
      </div>
@@ -104,9 +129,13 @@
                      <div class="work">
                        <img src="https://i.pinimg.com/1200x/a3/3f/ef/a33fef223470bf05bf822bc19e44b245.jpg">
                        <div class="layer">
-                        <h3>LinkUp :Language Excahnge App</h3>
-                        <p>The app connects you to the taleneted pepople around world.
-                          
+                        <h3>LinkUp :Language Exchange App</h3>
+                        <p>
+                              LinkUp is a full-stack MERN language exchange application designed to connect
+                                users globally for language learning and cultural exchange. It features user
+                                authentication, profile management, and real-time interaction in a clean,
+                                responsive interface.
+
                         </p>
                         <a href="https://linkup-r506.onrender.com"><i class="fa-solid fa-up-right-from-square"></i></a>
                        </div>
@@ -115,8 +144,9 @@
                        <img src="https://i.pinimg.com/736x/42/1d/06/421d0605ad0b4f47946c04192b494b12.jpg">
                        <div class="layer">
                         <h3>TrendyBay:Ecommerce Platform</h3>
-                        <p>The Currency Converter is a web application that allows users to convert amounts between different currencies using real-time exchange rates.
-                        </p>
+                          <p> TrendyBay is a full-stack MERN e-commerce application with admin panel
+                             capabilities for product and order management, along with secure
+                              payment gateway integration.</p>
                         <a href="https://jyotis1308.github.io/currency/"><i class="fa-solid fa-up-right-from-square"></i></a>
                        </div>
                     </div>
@@ -155,7 +185,7 @@
                             <form name="submit-to-google-sheet">
                                 <input type="text" name="Name" placeholder="Your Name" required>
                                 <input type="email" name="email" placeholder="Your email" required>
-                                <textarea name="Message" row="6" placeholder="Your Mesaage"></textarea>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                                 <button type="submit" class="btn btn2">Submit</button>
                             </form>
                             <span id="msg"></span>
@@ -163,23 +193,24 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <p> copyright. Made with <i class="fas fa-heart"></i></p>
+                  <p>© 2025 Jyoti. Made with <i class="fas fa-heart"></i></p>
                 </div>
          </div>
 
     <script>
         var tablinks= document.getElementsByClassName("tab-links");
          var tabcontents= document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-          for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    function opentab(event, tabname){
+    for (let tablink of tablinks){
+        tablink.classList.remove("active-link");
     }
+    for (let tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
     </script>
     <script>
         var sidemenu=document.getElementById("sidemenu");
